@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./mnmkato.github.io_product-preview-card_ (1).png)
+![](./mnmkato.github.io_product-preview-card_ (1))
 
 ### Links
 
