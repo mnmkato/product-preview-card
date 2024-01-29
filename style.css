@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.product-image{
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    background-image: url('./images/image-product-mobile.jpg');
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+ }
+ .product-details{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.price-old,
+button,
+.product-description,
+.product-type{
+    font-family: Montserrat;
+}
+.product-title,
+.price-new{
+    font-family: Fraunces;
+}
+.product-type,
+.product-description,
+.price-old{
+    color: hsl(228, 12%, 48%);
+}
+.product-type{
+    font-weight: 500;
+}
+.product-title{
+    color:  hsl(212, 21%, 14%);
+}
+.product-description{
+    font-weight: 500;
+    font-size: 14px;
+}
+.prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price-new{
+    color: hsl(158, 36%, 37%);
+}
+.price-old{
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+button>img{
+    margin-right: 1rem;
+}
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (min-width:475px) {
+    .container{
+        flex-direction:row;
+    }
+    .product-image{
+        width: 50%;
+        height: auto;
+        background-image: url('./images/image-product-desktop.jpg');
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }
+    .product-details{
+        width: 50%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
